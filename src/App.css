@@ -1,0 +1,12 @@
+.input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111827;
+}
+.input-box{
+  padding-right: 20px;
+}
+button{
+  color: white;
+}
