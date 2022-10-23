@@ -1,3 +1,8 @@
+body{
+  background-color: #222;
+}
+
+
 .input-box{
   display: flex;
   justify-content: center;
@@ -5,4 +10,31 @@
 }
 form {
   display: flex;
+}
+form > button{
+  margin-left: 20px;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #111826;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none
+}
+
+.css-input {
+     padding: 5px 0px 5px 15px;
+     font-size: 16px;
+     background-color: #4e4e4e;
+     color: #000000;
+     border-style: solid;
+     border-radius: 0px;
+     box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+     min-width: 30vw;
+     border-radius: 100px;
+}
+ .css-input:focus {
+     outline:none;
 }
