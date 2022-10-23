@@ -11,6 +11,10 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [data, setData] = useState([]);
 
+
+  const abc = (val) => {
+    console.log(val)
+  }
   // const getInput = (event) => {
   //   setQuery(event.target.value)
 
@@ -75,17 +79,14 @@ function App() {
   // const getinput = (event) =>{
   //   setQuery(event.target.value)
   // }
-  console.log(query)
 
   return (
     <div >
-      <Navbar />
-
-      <div className="input">
-        <div className='input-box'>
-          <form onSubmit={getNews}>
+      <Navbar abc={abc} />
+      <div className='input-box'>
+          <form >
             <input class="shadow appearance-none border rounded w-full py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="" type="text" placeholder="Enter Your Topic" onChange={(event) => {
-              setQuery(event.target.value)
+              
             }} />
 
             <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0 " type='submit'>Button
@@ -94,14 +95,12 @@ function App() {
               </svg>
             </button>
           </form>
-        </div>
-
       </div>
-      <>
+ {/* <>
         <section className="text-gray-400 bg-gray-900 body-font">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-wrap -m-4">
-              {data.map((val) => (<Post
+              {data.map((val,index) => (<Post key={index}
                 text={val.description}
                 image={val?.image?.thumbnail?.contentUrl
                   .replace("&pid=News", "")
@@ -112,7 +111,7 @@ function App() {
             </div>
           </div>
         </section>
-      </>
+      </> */}
     </div>
   );
 }
